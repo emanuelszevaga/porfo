@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emanuel Szevaga | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Emanuel Szevaga</div>
+        <div style="display:flex; align-items:center; gap:1.5rem;">
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Cambiar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Emanuel Szevaga</div>
+        <div style="display:flex; align-items:center; gap:1rem;">
+            <button class="theme-toggle" onclick="toggleTheme()" title="Cambiar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">Sobre mí</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/fotoperfil.jpeg" alt="Emanuel Szevaga profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hola, soy</p>
+            <h1 class="title">Emanuel Szevaga</h1>
+            <p class="section__text__p2"><span id="typewriter"></span><span class="cursor">|</span></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Emanuel_Szevaga_CV.pdf')">
+                    Descargar CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contactame
+                </button>
+            </div>
+            <div id="socials-container">
+                <img
+                    src="./assets/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/szevagaemanuel'"
+                />
+                <img
+                    src="./assets/github.png"
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/emanuelszevaga'"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Conocé más</p>
+        <h1 class="title">Sobre mí</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/puntero.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Educación</h3>
+                        <p>Ingeniería en Sistemas de Información - Universidad de la Cuenca del Plata</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Me llamo Emanuel Szevaga, actualmente estoy cursando cuarto año de Ingeniería en Sistemas de Información en la Universidad
+                        de la Cuenca del Plata en la ciudad de Posadas, Misiones.
+                    </p>
+                    <p>
+                        Me interesa el desarrollo de aplicaciones y sistemas que generen un impacto real
+                        en las personas, explorando áreas como el desarrollo web, el diseño UX/UI y la
+                        gestión de proyectos tecnológicos. Mi objetivo es seguir creciendo como profesional, 
+                        aprendiendo nuevas tecnologías y colaborando en proyectos que contribuyan 
+                        a mejorar la vida de los usuarios.
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+        />
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Mis</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/html-5.png" alt="HTML icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Avanzado</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css-3.png" alt="CSS icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Avanzado</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/jscriptlogo.png" alt="JavaScript icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermedio</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/typescript.png" alt="TypeScript icon" class="icon" />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermedio</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/React-icon.svg.png" alt="React icon" class="icon" />
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermedio</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/mysqllogo.png" alt="MySQL icon" class="icon" />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Avanzado</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/node-js.png" alt="Node.js icon" class="icon" />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/express-js.png" alt="Express.js icon" class="icon" />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/java.png" alt="Java icon" class="icon" />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Python.png" alt="Python icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermedio</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Herramientas</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/github.png" alt="GitHub icon" class="icon" />
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Intermedio</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/docker.png" alt="Docker icon" class="icon" />
+                            <div>
+                                <h3>Docker</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/postman.png" alt="Postman icon" class="icon" />
+                            <div>
+                                <h3>Postman</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/figma.png" alt="Figma icon" class="icon" />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+        />
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Algunos de mis</p>
+        <h1 class="title">Proyectos</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <!-- Proyecto 1: Vivero MyM -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/proyecto-1.png" alt="Proyecto Vivero MyM" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Vivero MyM</h2>
+                    <p class="project-description">
+                        Plataforma e-commerce para un vivero. Catálogo dinámico con filtrado por categorías, carrito de compras, autenticación con roles y panel administrativo con gestión de inventario y métricas de negocio.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/emanuelszevaga/ViveroMyM-Ecommerce'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Task Manager API -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/proyecto-2.png" alt="Proyecto Task Manager API" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Task Manager API</h2>
+                    <p class="project-description">
+                        REST API con autenticación JWT, endpoints protegidos por middleware y CRUD completo de tareas. Arquitectura MVC, hashing de contraseñas con bcrypt y base de datos PostgreSQL con Docker.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/emanuelszevaga/task-manager-api'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Weather Dashboard -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/proyecto-3.png" alt="Proyecto Weather Dashboard" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Weather Dashboard</h2>
+                    <p class="project-description">
+                        App Full Stack que consulta el clima en tiempo real integrando la API de OpenWeatherMap. Frontend en React, backend en Node.js/Express y historial de búsquedas por usuario persistido en MongoDB.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/emanuelszevaga/weather-app'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+        />
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Estemos en</p>
+        <h1 class="title">Contacto</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:emanuelszevaga7@gmail.com">emanuelszevaga7@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/szevagaemanuel" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
